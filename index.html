@@ -128,11 +128,17 @@ body {
 }
 .card__change { 
   margin-left: auto;
+}
+.card__change a {
   font-size: 14px;
   font-weight: 700;
   color: rgb(13, 13, 179);
   text-decoration: underline;
-
+  transition: all 0.1s ease;
+}
+.card__change a:hover {
+  color: #8179CF;
+  text-decoration: none;
 }
 .card__payment { 
   margin-bottom: 25px;
@@ -150,6 +156,10 @@ body {
   letter-spacing: 0.7px;
   background-color: hsl(245, 75%, 52%);
   box-shadow: 0 16px 24px rgba(56, 41, 224,0.4);
+  transition: background-color 0.1s ease
+}
+.card__payment a:hover {
+  background-color: #766CF1;
 }
 .card__cancel { 
   margin-bottom: 45px;
@@ -158,6 +168,10 @@ body {
   font-size: 16px;
   font-weight: 900;
   color: hsl(224, 23%, 55%);
+  transition: color 0.1s ease;
+}
+.card__cancel a:hover {
+  color:hsl(223, 47%, 23%);
 }
 
 @media (max-width: 376px) {
